@@ -18,9 +18,27 @@ my @known_styles = (
         }
     ),
     DDG::SpiceRole::NumberStyle->new({
-            id        => 'euro',
+            id        => 'greece',
             decimal   => ',',
             thousands => '.',
+        }
+    ),
+    DDG::SpiceRole::NumberStyle->new({
+            id        => 'euro',
+            decimal   => ',',
+            thousands => ' ',
+        }
+    ),
+    DDG::SpiceRole::NumberStyle->new({
+            id        => 'china',
+            decimal   => '.',
+            thousands => ' ',
+        }
+    ),
+    DDG::SpiceRole::NumberStyle->new({
+            id        => 'uk',
+            decimal   => '·',
+            thousands => ' ',
         }
     ),
 );
